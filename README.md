@@ -10,6 +10,10 @@ Vision Transformer achieve State-of-the-Art in image recognition task with stand
 ![fig2](./img/figure2.png)
 
 
+## 状況
+- train.pyを実行するとメモリが足りないと怒られる  
+  - `--gradient_accumulation_steps 9`を設定することで解決。1ずつ大きくしたが8まではメモリが足りなかった
+
 ## Usage
 ### 1. Download Pre-trained model (Google's Official Checkpoint)
 * [Available models](https://console.cloud.google.com/storage/vit_models/): ViT-B_16(**85.8M**), R50+ViT-B_16(**97.96M**), ViT-B_32(**87.5M**), ViT-L_16(**303.4M**), ViT-L_32(**305.5M**), ViT-H_14(**630.8M**)
