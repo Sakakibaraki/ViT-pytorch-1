@@ -14,6 +14,8 @@ Vision Transformer achieve State-of-the-Art in image recognition task with stand
 - train.pyを実行するとメモリが足りないと怒られる  
   - `--gradient_accumulation_steps 9`を設定することで解決。1ずつ大きくしたが8まではメモリが足りなかった
 - 学習時間はcifar10-100_500、gradient_accumulation_steps=9でちょうど24時間くらい
+  - `python3 train.py --name cifar10-100_500 --dataset cifar10 --model_type ViT-B_16 --pretrained_dir checkpoint/ViT-B_16.npz -
+-gradient_accumulation_steps 9`
 
 ## Usage
 ### 1. Download Pre-trained model (Google's Official Checkpoint)
